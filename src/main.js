@@ -96,7 +96,7 @@ function sendHelp(event) {
 document.querySelector('.helpForm').addEventListener('submit', sendHelp);*/
 
 document.addEventListener("DOMContentLoaded", function () {
-	const csvFilePath = "data/mods.csv"; // Ensure this file exists in your server root
+	const csvFilePath = "data/mods.csv";
 
 	fetch(csvFilePath)
 		.then(response => {
@@ -117,13 +117,13 @@ function displayCSV(csvText) {
 	}
 
 	const rows = csvText.trim().split("\n").map(row => row.split(","));
-	table.innerHTML = ""; // Clear previous content
+	table.innerHTML = "";
 
 	rows.forEach(row => {
 		if (row[0] === "name") {
 			table.innerHTML += `<tr><td>icon</td><td>name</td><td>desc</td></tr>`;
 		} else {
-			table.innerHTML += `<tr><td><img src="images/${row[0]}.png"/></td><td><a href="${row[1]}">${row[0]}</a></td><td>${row[2]}</td></tr>`;
+			table.innerHTML += `<tr><td><img src="images/${row[0]}.png"/></td><td><a href="${row[1]}" target=”_blank”>${row[0]}</a></td><td>${row[2]}</td></tr>`;
 		}
 	});
 }
