@@ -110,18 +110,35 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function displayCSV(csvText) {
-	const table = document.getElementById("csvTable");
-	if (!table) {
+	const importantTable = document.getElementById("importantTable");
+	const notImportantTable = document.getElementById("notImportantTable");
+	if (!importantTable) {
 		console.error("Table element not found!");
 		return;
 	}
 
 	const rows = csvText.trim().split("\n").map(row => row.split(";"));
-	table.innerHTML = "";
+	importantTable.innerHTML = "";
+	notImportantTable.innerHTML = "";
 
+	const importantMods = [];
+	const nonImportantMods = [];
 	rows.forEach(row => {
 		if (row[0] !== "name") {
-			table.innerHTML += `<tr><td><img src="images/mods/${row[0]}.png"/></td><td><a href="${row[1]}" target=”_blank”>${row[0]}</a></td><td>${row[2]}</td></tr>`;
+			const mod = `<tr><td><img src="images/mods/${row[0]}.png"/></td><td><a href="${row[1]}" target=”_blank”>${row[0]}</a></td><td>${row[2]}</td></tr>`;
+			if (row[3] === "y") {
+				importantMods.push(mod);
+			} else {
+				nonImportantMods.push(mod);
+			}
 		}
+	});
+	importantTable.innerHTML += `<tr><th colspan="3">MODS IMPORTANTS</th></tr>`;
+	importantMods.forEach(mod => {
+		importantTable.innerHTML += mod;
+	});
+	notImportantTable.innerHTML += `<tr><th colspan="3">MODS OPTIONELS</th></tr>`;
+	nonImportantMods.forEach(mod => {
+		notImportantTable.innerHTML += mod;
 	});
 }

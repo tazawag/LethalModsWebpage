@@ -36,6 +36,7 @@ table {
     background-color: #1e1e1e;
     border-radius: 10px;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 td, th {
@@ -65,13 +66,4 @@ a {
 a:hover {
     color: #ffdb4d;
     text-decoration: underline;
-}
-
-/* Réactivité */
-@media (max-width: 600px) {
-    table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
 }
