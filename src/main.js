@@ -96,7 +96,7 @@ function sendHelp(event) {
 document.querySelector('.helpForm').addEventListener('submit', sendHelp);*/
 
 document.addEventListener("DOMContentLoaded", function () {
-	const csvFilePath = "data/mods.csv";
+	const csvFilePath = "src/mods.csv";
 
 	fetch(csvFilePath)
 		.then(response => {
@@ -125,7 +125,7 @@ function displayCSV(csvText) {
 	const nonImportantMods = [];
 	rows.forEach(row => {
 		if (row[0] !== "name") {
-			const mod = `<tr><td><img src="images/mods/${row[0]}.png"/></td><td><a href="${row[1]}" target=”_blank”>${row[0]}</a></td><td>${row[2]}</td></tr>`;
+			const mod = `<tr><td><img src="src/img/mods/${row[0]}.png"/></td><td><a href="${row[1]}" target=”_blank”>${row[0]}</a></td><td>${row[2]}</td></tr>`;
 			if (row[3] === "y") {
 				importantMods.push(mod);
 			} else {
