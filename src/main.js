@@ -116,13 +116,11 @@ function displayCSV(csvText) {
 		return;
 	}
 
-	const rows = csvText.trim().split("\n").map(row => row.split("§"));
+	const rows = csvText.trim().split("\n").map(row => row.split(";"));
 	table.innerHTML = "";
 
 	rows.forEach(row => {
-		if (row[0] === "name") {
-			table.innerHTML += `<tr><td>icon</td><td>name</td><td>desc</td></tr>`;
-		} else {
+		if (row[0] !== "name") {
 			table.innerHTML += `<tr><td><img src="images/mods/${row[0]}.png"/></td><td><a href="${row[1]}" target=”_blank”>${row[0]}</a></td><td>${row[2]}</td></tr>`;
 		}
 	});
