@@ -118,8 +118,8 @@ function displayCSV(csvText) {
 	}
 
 	const rows = csvText.trim().split("\n").map(row => row.split(";"));
-	importantTable.innerHTML = "";
-	notImportantTable.innerHTML = "";
+	importantTable.innerHTML = `<tr><th colspan="3">MODS IMPORTANTS</th></tr>`;
+	notImportantTable.innerHTML = `<tr><th colspan="3">MODS OPTIONELS</th></tr>`;
 
 	const importantMods = [];
 	const nonImportantMods = [];
@@ -133,11 +133,9 @@ function displayCSV(csvText) {
 			}
 		}
 	});
-	importantTable.innerHTML += `<tr><th colspan="3">MODS IMPORTANTS</th></tr>`;
 	importantMods.forEach(mod => {
 		importantTable.innerHTML += mod;
 	});
-	notImportantTable.innerHTML += `<tr><th colspan="3">MODS OPTIONELS</th></tr>`;
 	nonImportantMods.forEach(mod => {
 		notImportantTable.innerHTML += mod;
 	});
