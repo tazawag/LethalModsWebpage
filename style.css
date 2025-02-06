@@ -6,10 +6,6 @@
 }
 
 body {
-    background-image: url('src/img/space.png');
-    background-repeat: repeat-y; /* Répétition uniquement sur l'axe vertical */
-    background-size: 100% auto; /* L'image prend toute la largeur */
-    background-position: top left;
     font-family: 'CustomFont', Arial, sans-serif;
     background-color: #121212;
     color: #ffffff;
@@ -79,4 +75,18 @@ a {
 a:hover {
     color: #ffdb4d;
     text-decoration: underline;
+}
+
+.parallax {
+    background-image: url('src/img/space.png');
+    background-repeat: repeat-y; /* Répétition uniquement sur l'axe vertical */
+    background-size: 100% auto; /* L'image prend toute la largeur */
+    background-position: top left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Hauteur de la fenêtre */
+    background-size: cover; /* L'image couvre toute la zone */
+    z-index: -1; /* Envoie l'image en arrière-plan */
 }
