@@ -6,6 +6,10 @@
 }
 
 body {
+    background-image: url('src/img/space.png');
+    background-repeat: repeat-y; /* Répétition uniquement sur l'axe vertical */
+    background-size: 100% auto; /* L'image prend toute la largeur */
+    background-position: top left;
     font-family: 'CustomFont', Arial, sans-serif;
     background-color: #121212;
     color: #ffffff;
@@ -17,7 +21,7 @@ body {
 
 header {
     padding: 20px;
-    background-color: #1f1f1f;
+    background-color: #1f1f1f91;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -40,7 +44,7 @@ table {
     max-width: 75%;
     margin: 0 auto;
     border-collapse: collapse;
-    background-color: #1e1e1e;
+    background-color: #1e1e1e91;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 20px;
@@ -53,7 +57,7 @@ td, th {
 }
 
 th {
-    background-color: #292929;
+    background-color: #29292991;
     font-weight: bold;
     text-align: center;
     font-size: 30px;
