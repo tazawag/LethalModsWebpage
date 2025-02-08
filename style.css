@@ -79,13 +79,13 @@ a:hover {
 
 .parallax {
     background-image: url('src/img/space.png');
-    background-repeat: repeat-y; /* Répétition uniquement sur l'axe vertical */
+    background-repeat: repeat;
     background-size: 100% auto; /* L'image prend toute la largeur */
     background-position: top left;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 200%;
     height: 100vh; /* Hauteur de la fenêtre */
     background-size: cover; /* L'image couvre toute la zone */
     z-index: -1; /* Envoie l'image en arrière-plan */

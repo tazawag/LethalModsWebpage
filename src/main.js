@@ -44,7 +44,16 @@ function displayCSV(csvText) {
 	});
 }
 
-window.addEventListener('scroll', function() {
+let offsetX = 0; // Position horizontale du fond
+const speedX = 0.15; // Vitesse du déplacement horizontal
+const speedY = 0.5; // Vitesse du parallax vertical
+
+function animateBackground() {
     const scrolled = window.scrollY;
-    document.querySelector('.parallax').style.backgroundPositionY = -(scrolled * 0.5) + 'px';
-});
+    offsetX -= speedX; // Déplace l’image vers la gauche
+    document.querySelector('.parallax').style.backgroundPosition = `${offsetX}px ${-(scrolled * speedY)}px`;
+    requestAnimationFrame(animateBackground);
+}
+
+// Lancer l'animation
+animateBackground();
