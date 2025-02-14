@@ -109,3 +109,18 @@ a:hover {
     background-size: cover; /* L'image couvre toute la zone */
     z-index: -1; /* Envoie l'image en arrière-plan */
 }
+
+.mod-cell {
+    text-align: center;
+}
+
+.mod-cell img {
+    display: block;
+    margin: 0 auto;
+}
+
+.mod-name {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+}
