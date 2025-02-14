@@ -32,9 +32,9 @@ function displayCSV(csvText) {
                 <tr>
                     <td class="mod-cell">
                         <img src="src/img/mods/${row[0]}.png" width="50" height="50"/>
-                        <span class="mod-name">${row[0]}</span>
+                        <span class="mod-name"><a href="${row[1]}" target="_blank">${row[0]}</a></span>
                     </td>
-                    <td><a href="${row[1]}" target="_blank">${row[2]}</a></td>
+                    <td>${row[2]}</td>
                 </tr>
             `;
             if (row[3] === "y") {
