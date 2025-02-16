@@ -13,36 +13,41 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function displayCSV(csvText) {
-	const importantTable = document.getElementById("importantTable");
-	const notImportantTable = document.getElementById("notImportantTable");
-	if (!importantTable) {
-		console.error("Table element not found!");
-		return;
-	}
+    const importantTable = document.getElementById("importantTable");
+    const notImportantTable = document.getElementById("notImportantTable");
+    if (!importantTable || !notImportantTable) {
+        console.error("Table element not found!");
+        return;
+    }
 
-	const rows = csvText.trim().split("\n").map(row => row.split(";"));
-	importantTable.innerHTML = `<tr><th colspan="3">MODS IMPORTANTS</th></tr>`;
-	notImportantTable.innerHTML = `<tr><th colspan="3">MODS OPTIONELS</th></tr>`;
+    const rows = csvText.trim().split("\n").map(row => row.split(";"));
+    importantTable.innerHTML = `<tr><th colspan="2">MODS IMPORTANTS</th></tr>`;
+    notImportantTable.innerHTML = `<tr><th colspan="2">MODS OPTIONNELS</th></tr>`;
 
-	const importantMods = [];
-	const nonImportantMods = [];
-	rows.forEach(row => {
-		if (row[0] !== "name") {
-			const mod = `<tr><td><img src="src/img/mods/${row[0]}.png"/></td><td><a href="${row[1]}" target=”_blank”>${row[0]}</a></td><td>${row[2]}</td></tr>`;
-			if (row[3] === "y") {
-				importantMods.push(mod);
-			} else {
-				nonImportantMods.push(mod);
-			}
-		}
-	});
-	importantMods.forEach(mod => {
-		importantTable.innerHTML += mod;
-	});
-	nonImportantMods.forEach(mod => {
-		notImportantTable.innerHTML += mod;
-	});
+    const importantMods = [];
+    const nonImportantMods = [];
+    rows.forEach(row => {
+        if (row[0] !== "name") {
+            const mod = `
+                <tr>
+                    <td class="mod-cell">
+                        <img src="src/img/mods/${row[0]}.png" width="50" height="50"/>
+                        <span class="mod-name"><a href="${row[1]}" target="_blank">${row[0]}</a></span>
+                    </td>
+                    <td>${row[2]}</td>
+                </tr>
+            `;
+            if (row[3] === "y") {
+                importantMods.push(mod);
+            } else {
+                nonImportantMods.push(mod);
+            }
+        }
+    });
+    importantTable.innerHTML += importantMods.join("");
+    notImportantTable.innerHTML += nonImportantMods.join("");
 }
+
 
 let offsetX = 0; // Position horizontale du fond
 const speedX = 0.15; // Vitesse du déplacement horizontal
