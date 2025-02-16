@@ -72,11 +72,6 @@ td, th {
     word-wrap: break-word;
 }
 
-td:first-child {
-    width: 175px;
-    text-align: center;
-}
-
 th {
     background-color: #29292991;
     font-weight: bold;
@@ -118,6 +113,7 @@ a:hover {
 
 .mod-cell {
     text-align: center;
+    width: 200px;
 }
 
 .mod-cell img {
