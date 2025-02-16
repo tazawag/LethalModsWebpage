@@ -44,12 +44,19 @@ table {
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 20px;
+    table-layout: fixed;
 }
 
 td, th {
     padding: 10px;
     border: 1px solid #333;
     text-align: left;
+    word-wrap: break-word;
+}
+
+td:first-child {
+    width: 120px; /* Définissez ici la largeur voulue pour la première colonne */
+    text-align: center;
 }
 
 th {
