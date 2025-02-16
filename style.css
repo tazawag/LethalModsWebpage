@@ -63,7 +63,6 @@ table {
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 20px;
-    table-layout: fixed;
 }
 
 td, th {
@@ -74,7 +73,7 @@ td, th {
 }
 
 td:first-child {
-    width: 120px; /* Définissez ici la largeur voulue pour la première colonne */
+    width: 10px;
     text-align: center;
 }
 
