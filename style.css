@@ -32,12 +32,17 @@ main {
     margin-bottom: 20px;
 }
 
+main p {
+    margin-top: 0px;
+    margin-bottom: -10px;
+}
+
 main h1 {
     margin-top: 0px;
+    margin-bottom: 30px;
 }
 
 main h2 {
-    margin-top: -10px;
     margin-bottom: 10px;
 }
 
@@ -45,6 +50,14 @@ h3 {
     margin: 0;
     font-size: 40px;
     color: #f5c518;
+}
+
+main h4 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-weight: normal;
+    font-size: 17px;
+    color: #999999;
 }
 
 header img {
@@ -125,4 +138,11 @@ a:hover {
     display: block;
     margin-top: 5px;
     font-weight: bold;
+}
+
+.mod-author {
+    display: block;
+    font-weight: bold;
+    font-size: 17px;
+    color: #999999;
 }
