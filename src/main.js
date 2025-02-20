@@ -28,11 +28,16 @@ function displayCSV(csvText) {
     const nonImportantMods = [];
     rows.forEach(row => {
         if (row[0] !== "name") {
+            let author = row[1].split("/")[6];
+            if (author === "Catshape") {
+                author = "Tazawa :P";
+            }
             const mod = `
                 <tr>
                     <td class="mod-cell">
                         <img src="src/img/mods/${row[0]}.png" width="50" height="50"/>
                         <span class="mod-name"><a href="${row[1]}" target="_blank">${row[0]}</a></span>
+                        <span class="mod-author">Par ${author}</span>
                     </td>
                     <td>${row[2]}</td>
                 </tr>
