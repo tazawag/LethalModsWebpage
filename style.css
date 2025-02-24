@@ -71,7 +71,9 @@ table {
     width: 75%;
     max-width: 75%;
     margin: 0 auto;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-color: #121212;
     background-color: #1e1e1e91;
     border-radius: 10px;
     overflow: hidden;
@@ -126,7 +128,7 @@ a:hover {
 
 .mod-cell {
     text-align: center;
-    width: 200px;
+    width: 250px;
 }
 
 .mod-cell img {
@@ -145,4 +147,15 @@ a:hover {
     font-weight: bold;
     font-size: 17px;
     color: #999999;
+}
+
+.mod-tag {
+    display: inline-block;
+    background-color: #999999;
+    color: #000000;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 2px;
+    font-size: 17px;
+    font-weight: bold;
 }

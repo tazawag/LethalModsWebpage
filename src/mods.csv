@@ -1,25 +1,25 @@
-name;link;desc;important;ama
-MoreCompany;https://thunderstore.io/c/lethal-company/p/notnotnotswipez/MoreCompany/;Permet de jouer à plus de 4 joueurs et rajoute un système de cosmétiques.;y;true
-FreeeeeeMoooooons;https://thunderstore.io/c/lethal-company/p/SlushyRH/FreeeeeeMoooooons/;Rends toutes les lunes gratuites.;y;false
-LethalFashion;https://thunderstore.io/c/lethal-company/p/BatTeam/LethalFashion/;Débloque toutes les tenues dès le début de la partie.;y;true
-YippeeMod;https://thunderstore.io/c/lethal-company/p/sunnobunno/YippeeMod/;<a href="https://www.youtube.com/watch?v=of4aFbUKjbk" target="_blank">YIPPEEEEE</a>;n;false
-LateCompany;https://thunderstore.io/c/lethal-company/p/anormaltwig/LateCompany/;Permet d’inviter des joueurs après le début d’une partie.;y;true
-Coroner;https://thunderstore.io/c/lethal-company/p/EliteMasterEric/Coroner/;Ajoute des commentaires sur l’écran de description de joueurs à la fin d’une manche (ex. comment ils sont morts);n;false
-CoilHeadStare;https://thunderstore.io/c/lethal-company/p/TwinDimensionalProductions/CoilHeadStare/;Permet aux Coil-Heads de vous regarder quand ils ne bougent pas.;n;false
-HealthMetrics;https://thunderstore.io/c/lethal-company/p/matsuura/HealthMetrics/;Ajoute un compteur de PV.;n;true
-Corporate Restructure;https://thunderstore.io/c/lethal-company/p/Jamil/Corporate_Restructure/;Ajoute des informations en plus au dessus de l'écran du vaisseau. (Valeur du loot, heure, etc..);n;false
-Mimics;https://thunderstore.io/c/lethal-company/p/x753/Mimics/;Ajoute de fausses portes secondaires qui mangent les joueurs qui l'ouvrent.;y;false
-Skinwalkers;https://thunderstore.io/c/lethal-company/p/RugbugRedfern/Skinwalkers/;Permet aux monstres de ré-utiliser nos voix de façon aléatoire.;n;false
-LethalCompanyVR;https://thunderstore.io/c/lethal-company/p/DaXcess/LethalCompanyVR/;Permet de jouer en VR et de voir les joueurs VR.;y;false
-FlashlightToggle;https://thunderstore.io/c/lethal-company/p/Renegades/FlashlightToggle/;Permet d'allumer/éteindre une lampe avec F.
-More Suits;https://thunderstore.io/c/lethal-company/p/x753/More_Suits/;Ajoute de nouvelles tenues au jeu.;y;false
-Lethal Master Chief;https://thunderstore.io/c/lethal-company/p/Pee_John_Labs/Lethal_Master_Chief/;Ajoute la tenue de Master Chief.;y;false
-ShipLoot;https://thunderstore.io/c/lethal-company/p/tinyhoot/ShipLoot/;Affiche la valeur du loot contenu dans le vaisseau.;n;true
-LCMaxSoundsFix;https://thunderstore.io/c/lethal-company/p/Hardy/LCMaxSoundsFix/;Corrige un bug effaçant des sons si trop de sons se jouent en même temps.;n;false
-CullFactory;https://thunderstore.io/c/lethal-company/p/fumiko/CullFactory/;Force le jeu à ne pas afficher les salles que l'on ne voit pas pour améliorer les performances.;n;false
-Monster Plushies;https://thunderstore.io/c/lethal-company/p/Scintesto/Monster_Plushies/;Ajoute des peluches des monstres à trouver sur les lunes.;y;false
-NoSellLimit;https://thunderstore.io/c/lethal-company/p/ViViKo/NoSellLimit/;Retire la limite d'objets placés pour la vente.;y;false
-LethalPresents;https://thunderstore.io/c/lethal-company/p/Azim/LethalPresents/;Donne aux cadeaux une possibilité de faire apparaître un monstre au lieu d'un objet.;y;false
-HoarderBugUseItems;https://thunderstore.io/c/lethal-company/p/mattplays/HoarderBugUseItems/;Permet aux <a href="https://lethal-company.fandom.com/wiki/Hoarding_Bug" target="_blank">Hoarding Bugs</a> d'utiliser les objets qu'ils tiennent.;y;false
-Tazawa's Cosmetics;https://thunderstore.io/c/lethal-company/p/Catshape/Tazawas_Cosmetics/;Collection de nos cosmétiques.;y;true
-Scopophobia;https://thunderstore.io/c/lethal-company/p/jaspercreations/Scopophobia/;Ajoute SCP-096 (Shy Guy) au jeu.;y;false
+name;link;desc;important;ama;tags
+MoreCompany;https://thunderstore.io/c/lethal-company/p/notnotnotswipez/MoreCompany/;Permet de jouer à plus de 4 joueurs et rajoute un système de cosmétiques.;y;true;Essentiel,Cosmétiques
+FreeeeeeMoooooons;https://thunderstore.io/c/lethal-company/p/SlushyRH/FreeeeeeMoooooons/;Rends toutes les lunes gratuites.;y;false;Fun
+LethalFashion;https://thunderstore.io/c/lethal-company/p/BatTeam/LethalFashion/;Débloque toutes les tenues dès le début de la partie.;y;true;Cosmétiques,Host-Side
+YippeeMod;https://thunderstore.io/c/lethal-company/p/sunnobunno/YippeeMod/;<a href="https://www.youtube.com/watch?v=of4aFbUKjbk" target="_blank">YIPPEEEEE</a>;n;false;Sons,Fun
+LateCompany;https://thunderstore.io/c/lethal-company/p/anormaltwig/LateCompany/;Permet d’inviter des joueurs après le début d’une partie.;y;true;Essentiel,Pratique
+Coroner;https://thunderstore.io/c/lethal-company/p/EliteMasterEric/Coroner/;Ajoute des commentaires sur l’écran de description de joueurs à la fin d’une manche (ex. comment ils sont morts);n;false;Fun,Pratique
+CoilHeadStare;https://thunderstore.io/c/lethal-company/p/TwinDimensionalProductions/CoilHeadStare/;Permet aux Coil-Heads de vous regarder quand ils ne bougent pas.;n;false;Fun,Visuel
+HealthMetrics;https://thunderstore.io/c/lethal-company/p/matsuura/HealthMetrics/;Ajoute un compteur de PV.;n;true;Pratique
+Corporate Restructure;https://thunderstore.io/c/lethal-company/p/Jamil/Corporate_Restructure/;Ajoute des informations en plus au dessus de l'écran du vaisseau. (Valeur du loot, heure, etc..);n;false;Pratique
+Mimics;https://thunderstore.io/c/lethal-company/p/x753/Mimics/;Ajoute de fausses portes secondaires qui mangent les joueurs qui l'ouvrent.;y;false;Monstre
+Skinwalkers;https://thunderstore.io/c/lethal-company/p/RugbugRedfern/Skinwalkers/;Permet aux monstres de ré-utiliser nos voix de façon aléatoire.;n;false;Monstre,Fun
+LethalCompanyVR;https://thunderstore.io/c/lethal-company/p/DaXcess/LethalCompanyVR/;Permet de jouer en VR et de voir les joueurs VR.;y;false;Fun,Pratique
+FlashlightToggle;https://thunderstore.io/c/lethal-company/p/Renegades/FlashlightToggle/;Permet d'allumer/éteindre une lampe avec F.;n;false;Pratique
+More Suits;https://thunderstore.io/c/lethal-company/p/x753/More_Suits/;Ajoute de nouvelles tenues au jeu.;y;false;Cosmétiques,Fun
+Lethal Master Chief;https://thunderstore.io/c/lethal-company/p/Pee_John_Labs/Lethal_Master_Chief/;Ajoute la tenue de Master Chief.;y;false;Cosmétiques,Fun
+ShipLoot;https://thunderstore.io/c/lethal-company/p/tinyhoot/ShipLoot/;Affiche la valeur du loot contenu dans le vaisseau.;n;true;Pratique
+LCMaxSoundsFix;https://thunderstore.io/c/lethal-company/p/Hardy/LCMaxSoundsFix/;Corrige un bug effaçant des sons si trop de sons se jouent en même temps.;n;false;Pratique,Optimisation
+CullFactory;https://thunderstore.io/c/lethal-company/p/fumiko/CullFactory/;Force le jeu à ne pas afficher les salles que l'on ne voit pas pour améliorer les performances.;n;false;Pratique,Optimisation
+Monster Plushies;https://thunderstore.io/c/lethal-company/p/Scintesto/Monster_Plushies/;Ajoute des peluches des monstres à trouver sur les lunes.;y;false;Scrap,Fun
+NoSellLimit;https://thunderstore.io/c/lethal-company/p/ViViKo/NoSellLimit/;Retire la limite d'objets placés pour la vente.;y;false;Pratique,Optimisation
+LethalPresents;https://thunderstore.io/c/lethal-company/p/Azim/LethalPresents/;Donne aux cadeaux une possibilité de faire apparaître un monstre au lieu d'un objet.;y;false;Fun,Monstre
+HoarderBugUseItems;https://thunderstore.io/c/lethal-company/p/mattplays/HoarderBugUseItems/;Permet aux <a href="https://lethal-company.fandom.com/wiki/Hoarding_Bug" target="_blank">Hoarding Bugs</a> d'utiliser les objets qu'ils tiennent.;y;false;Fun,Monstre
+Tazawa's Cosmetics;https://thunderstore.io/c/lethal-company/p/Catshape/Tazawas_Cosmetics/;Collection de nos cosmétiques.;y;true;Cosmétiques,Fun
+Scopophobia;https://thunderstore.io/c/lethal-company/p/jaspercreations/Scopophobia/;Ajoute SCP-096 (Shy Guy) au jeu.;y;false;Monstre

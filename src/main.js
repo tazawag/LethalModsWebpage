@@ -13,12 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function displayCSV(csvText) {
-    let ama;
-    if (document.querySelector("title").innerHTML === "Lethal Mods Webpage - Ama") {
-        ama = true;
-    } else {
-        ama = false;
-    }
+    let ama = document.querySelector("title").innerHTML === "Lethal Mods Webpage - Ama";
 
     const importantTable = document.getElementById("importantTable");
     const notImportantTable = document.getElementById("notImportantTable");
@@ -40,6 +35,8 @@ function displayCSV(csvText) {
                 if (author === "Catshape") {
                     author = "Tazawa :P";
                 }
+                let tags = row[5] ? row[5].split(",").map(tag => `<span class='mod-tag'>${tag.trim()}</span>`).join(" ") : "";
+                
                 const mod = `
                     <tr>
                         <td class="mod-cell">
@@ -47,9 +44,13 @@ function displayCSV(csvText) {
                             <span class="mod-name"><a href="${row[1]}" target="_blank">${row[0]}</a></span>
                             <span class="mod-author">Par ${author}</span>
                         </td>
-                        <td>${row[2]}</td>
+                        <td>
+                            ${row[2]}<br><br>
+                            ${tags}
+                        </td>
                     </tr>
                 `;
+                
                 if (row[3] === "y") {
                     importantMods.push(mod);
                 } else {
