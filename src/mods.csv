@@ -23,3 +23,8 @@ LethalPresents;https://thunderstore.io/c/lethal-company/p/Azim/LethalPresents/;D
 HoarderBugUseItems;https://thunderstore.io/c/lethal-company/p/mattplays/HoarderBugUseItems/;Permet aux <a href="https://lethal-company.fandom.com/wiki/Hoarding_Bug" target="_blank">Hoarding Bugs</a> d'utiliser les objets qu'ils tiennent.;y;false;Fun,Monstre
 Tazawa's Cosmetics;https://thunderstore.io/c/lethal-company/p/Catshape/Tazawas_Cosmetics/;Collection de nos cosmétiques.;y;true;Cosmétiques,Fun
 Scopophobia;https://thunderstore.io/c/lethal-company/p/jaspercreations/Scopophobia/;Ajoute SCP-096 (Shy Guy) au jeu.;y;false;Monstre
+BetterItemScan;https://thunderstore.io/c/lethal-company/p/PopleZoo/BetterItemScan/;Améliore le scan des objets.;n;false;Pratique
+EnemySoundFixes;https://thunderstore.io/c/lethal-company/p/ButteryStancakes/EnemySoundFixes/;Corrige un bug empêchant certains sons de se jouer correctement.;n;false;Optimisation
+HideChat;https://thunderstore.io/c/lethal-company/p/Monkeytype/HideChat/;Cache entièrement le chat lorsqu'il n'est pas utilisé.;n;false;Pratique
+SpectateEnemies;https://thunderstore.io/c/lethal-company/p/AllToasters/SpectateEnemies/;Permet aux morts de voir le point de vue des monstres.;n;false;Fun,Monstre
+Terminal Clock;https://thunderstore.io/c/lethal-company/p/NotAtomicBomb/Terminal_Clock/;Affiche l'heure sur le terminal.;n;false;Pratique
