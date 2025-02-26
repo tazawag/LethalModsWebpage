@@ -46,7 +46,7 @@ main h2 {
     margin-bottom: 10px;
 }
 
-h3 {
+header h3 {
     margin: 0;
     font-size: 40px;
     color: #f5c518;
@@ -67,7 +67,7 @@ header img {
 }
 
 /* Tableau des mods */
-table {
+body>table {
     width: 75%;
     max-width: 75%;
     margin: 0 auto;
@@ -166,4 +166,13 @@ ul {
     display: inline-block;
     text-align: left;
     margin: 0px;
+}
+
+table h3 {
+    margin: 0px;
+}
+
+.newsTable {
+    display: flex;
+    justify-content: center;
 }

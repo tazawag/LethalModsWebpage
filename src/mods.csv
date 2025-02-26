@@ -28,3 +28,5 @@ EnemySoundFixes;https://thunderstore.io/c/lethal-company/p/ButteryStancakes/Enem
 HideChat;https://thunderstore.io/c/lethal-company/p/Monkeytype/HideChat/;Cache entièrement le chat lorsqu'il n'est pas utilisé.;n;false;Pratique
 SpectateEnemies;https://thunderstore.io/c/lethal-company/p/AllToasters/SpectateEnemies/;Permet aux morts de voir le point de vue des monstres.;n;false;Fun,Monstre
 Terminal Clock;https://thunderstore.io/c/lethal-company/p/NotAtomicBomb/Terminal_Clock/;Affiche l'heure sur le terminal.;n;false;Pratique
+BunkbedRevive;https://thunderstore.io/c/lethal-company/p/ViViKo/BunkbedRevive/;Permet de réanimer des corps aux lits du vaisseau pour un prix.;y;false;Fun,Pratique
+QuotaRollover;https://thunderstore.io/c/lethal-company/p/boxofbiscuits97/QuotaRollover/;Permet aux ventes de dépasser sur le quota suivant.;y;false;Pratique,Rebalancing
