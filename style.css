@@ -176,3 +176,7 @@ table h3 {
     display: flex;
     justify-content: center;
 }
+
+#configTable td {
+    width: 50%;
+}
