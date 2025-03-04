@@ -180,3 +180,7 @@ table h3 {
 #configTable td {
     width: 50%;
 }
+
+.configModName {
+    margin-bottom: 0px;
+}

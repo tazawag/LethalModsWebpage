@@ -46,13 +46,17 @@ function displayCSV(csvText) {
     let firstCol = true;
     rows.forEach(row => {
         if (row[0] !== "name") {
+            let author = row[1].split("/")[6];
+            if (author === "Catshape") {
+                author = "Tazawa :P";
+            }
             if (configTable != null) {
                 if (row[6] === "true") {
                     let mod;
                     if (firstCol) {
-                        mod = `<tr><td><a href=\"${row[0]}.html\">${row[0]}</a></td>`;
+                        mod = `<tr><td><a href=\"${row[0]}.html\">${row[0]}</a><br><span class="mod-author">Par ${author}</span></td>`;
                     } else {
-                        mod = `<td><a href=\"${row[0]}.html\">${row[0]}</a></td></tr>`;
+                        mod = `<td><a href=\"${row[0]}.html\">${row[0]}</a><br><span class="mod-author">Par ${author}</span></td></tr>`;
                     }
 
                     firstCol = !firstCol;
@@ -61,10 +65,6 @@ function displayCSV(csvText) {
                 }
             } else {
                 if (!ama || (ama && row[4] === "true")) {
-                    let author = row[1].split("/")[6];
-                    if (author === "Catshape") {
-                        author = "Tazawa :P";
-                    }
                     let tags = row[5] ? row[5].split(",").map(tag => `<span class='mod-tag'>${tag.trim()}</span>`).join(" ") : "";
                     
                     const mod = `
